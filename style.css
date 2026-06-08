@@ -1,0 +1,232 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#050505;
+color:white;
+padding:20px;
+}
+
+header{
+text-align:center;
+margin-bottom:30px;
+}
+
+.logo{
+width:180px;
+border-radius:50%;
+box-shadow:0 0 40px red;
+}
+
+header h1{
+color:#ff2d2d;
+margin-top:15px;
+text-shadow:0 0 20px red;
+}
+
+.catalogo{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:15px;
+text-align:center;
+border:1px solid #ff000050;
+}
+
+.card:hover{
+box-shadow:0 0 20px red;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.card button{
+background:red;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.carrito{
+margin-top:40px;
+background:#111;
+padding:25px;
+border-radius:15px;
+}
+
+.carrito input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+padding:10px;
+background:#1a1a1a;
+border-radius:10px;
+}
+
+.btn-remove{
+background:#ff3333;
+border:none;
+padding:5px 10px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.qr-box{
+text-align:center;
+margin-top:20px;
+}
+
+.qr-box img{
+width:250px;
+max-width:100%;
+border-radius:15px;
+}
+
+.enviar{
+margin-top:20px;
+width:100%;
+padding:15px;
+background:#25D366;
+border:none;
+border-radius:10px;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.menu{
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.menu button{
+background:#151515;
+border:1px solid red;
+color:white;
+padding:10px 15px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.menu button:hover{
+background:red;
+}
+
+.platform-logo{
+width:90px;
+height:90px;
+object-fit:contain;
+margin-bottom:10px;
+}
+
+/* Logos de plataformas */
+.platform-logo{
+width:90px;
+height:90px;
+object-fit:contain;
+margin-bottom:10px;
+}
+
+/* Menú superior */
+.menu{
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+.menu button{
+background:#151515;
+border:1px solid #ff2d2d;
+color:white;
+padding:10px 15px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.menu button:hover{
+background:#ff2d2d;
+transform:translateY(-2px);
+}
+
+/* Espacio entre categorías y carrito */
+.catalogo{
+margin-bottom:30px;
+}
+
+/* Efecto para el botón agregar */
+.card button{
+background:red;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.card button:hover{
+transform:scale(1.05);
+}
+
+/* Inputs más modernos */
+.carrito input{
+background:#1b1b1b;
+color:white;
+border:1px solid #333;
+}
+
+/* Total */
+#total{
+color:#00ff88;
+font-weight:bold;
+}
+
+/* Responsive móvil */
+@media(max-width:600px){
+
+.logo{
+width:130px;
+}
+
+header h1{
+font-size:24px;
+}
+
+.card p{
+font-size:18px;
+}
+
+}

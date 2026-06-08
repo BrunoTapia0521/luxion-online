@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxion Online Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header>
+<img src="logo.png" class="logo">
+<h1>LUXION ONLINE STORE</h1>
+<p>Streaming Premium • Recargas • Entretenimiento</p>
+</header>
+
+    <nav class="menu">
+
+<button onclick="mostrar('individual')">
+Individual
+</button>
+
+<button onclick="mostrar('combos')">
+Combos
+</button>
+
+<button onclick="mostrar('cable')">
+TV Cable
+</button>
+
+<button onclick="mostrar('juegos')">
+Recarga Juegos
+</button>
+
+<button onclick="mostrar('ramen')">
+Ramen Coreano
+</button>
+
+</nav>
+
+<section id="individual" class="catalogo">
+
+<div class="card">
+<img src="img/netflix.png" class="platform-logo">
+<h3>Netflix</h3>
+<p>35 Bs</p>
+<button onclick="agregar('Netflix',35)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Disney Premium</h3>
+<p>25 Bs</p>
+<button onclick="agregar('Disney Premium',25)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Disney Standard</h3>
+<p>20 Bs</p>
+<button onclick="agregar('Disney Standard',20)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Prime Video</h3>
+<p>17 Bs</p>
+<button onclick="agregar('Prime Video',17)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Max</h3>
+<p>15 Bs</p>
+<button onclick="agregar('Max',15)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Crunchyroll</h3>
+<p>15 Bs</p>
+<button onclick="agregar('Crunchyroll',15)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Paramount+</h3>
+<p>20 Bs</p>
+<button onclick="agregar('Paramount+',20)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Universal+</h3>
+<p>22 Bs</p>
+<button onclick="agregar('Universal+',22)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Spotify Premium</h3>
+<p>25 Bs</p>
+<button onclick="agregar('Spotify Premium',25)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>YouTube Premium</h3>
+<p>25 Bs</p>
+<button onclick="agregar('YouTube Premium',25)">Agregar</button>
+</div>
+
+</section>
+
+<section id="combos" class="catalogo" style="display:none;">
+
+<div class="card">
+<h3>Combo Básico</h3>
+<p>Netflix + Disney + Prime</p>
+<p>65 Bs</p>
+<button onclick="agregar('Combo Básico',65)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Combo Premium</h3>
+<p>Netflix + Disney + Max + Spotify</p>
+<p>85 Bs</p>
+<button onclick="agregar('Combo Premium',85)">Agregar</button>
+</div>
+
+</section>
+
+<section id="cable" class="catalogo" style="display:none;">
+
+<div class="card">
+<h3>Magis TV</h3>
+<p>25 Bs</p>
+<button onclick="agregar('Magis TV',25)">Agregar</button>
+</div>
+
+</section>
+
+<section id="juegos" class="catalogo" style="display:none;">
+
+<div class="card">
+<h3>Free Fire</h3>
+<p>Desde 5 Bs</p>
+<button onclick="agregar('Free Fire',5)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Mobile Legends</h3>
+<p>Desde 5 Bs</p>
+<button onclick="agregar('Mobile Legends',5)">Agregar</button>
+</div>
+
+</section>
+
+<section id="ramen" class="catalogo" style="display:none;">
+
+<div class="card">
+<h3>Buldak Carbonara</h3>
+<p>18 Bs</p>
+<button onclick="agregar('Buldak Carbonara',18)">Agregar</button>
+</div>
+
+<div class="card">
+<h3>Shin Ramyun</h3>
+<p>15 Bs</p>
+<button onclick="agregar('Shin Ramyun',15)">Agregar</button>
+</div>
+
+</section>
+
+<section class="carrito">
+
+<h2>🛒 Tu Pedido</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+
+<input type="text" id="telefono" placeholder="WhatsApp">
+
+<div id="lista"></div>
+
+<h3>Total: <span id="total">0</span> Bs</h3>
+
+<div class="qr-box">
+<img src="qr.jpg">
+</div>
+
+<button class="enviar" onclick="enviarPedido()">
+Enviar Pedido
+</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
